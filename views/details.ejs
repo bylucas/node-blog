@@ -7,7 +7,8 @@
   <div class="details content">
     <h2><%= blog.title %></h2>
     <div class="content">
-      <p><%= blog.body %></p>
+        <p><%= blog.body %></p>
+      
     </div>
     <a class="delete" data-doc="<%= blog._id %>">
       <img src="/trashcan.svg" alt="delete icon">
@@ -17,6 +18,7 @@
   <%- include("./partials/footer.ejs") %>
 
   <script>
+   
     const trashcan = document.querySelector('a.delete');
 
     trashcan.addEventListener('click', (e) => {
